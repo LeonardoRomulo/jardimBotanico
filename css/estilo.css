@@ -1,0 +1,43 @@
+/* Reset das prpriedades do  css*/
+*{                                 
+    margin: 0;
+    padding: 0;
+}
+/* Limitando a largura da div que comporta todo o conteúdo*/
+.limita-largura {                 
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/*O topo e o  rodapé terá o mesmo estilo*/
+.topo, .rodape {                   
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: #1d6e4d;
+    color: #fff;
+    font-size: 20px;
+}
+/*Aqui definimos a família de fonte que vaiser usada em toda a página*/
+body {
+    font-family: sans-serif;    
+}
+/*Aqui usamos a largura relativa  por meio de calculo para a div que comporta a apresentação da página*/
+.area {
+    width: calc(100% - 70px);   
+    margin: 20px 35px;
+}
+/* Definindo  a lergura e a margem da imafem da apresentação, dos paragrafos e inicial das três imagens */
+.apresentacao img, .area p, .area-tres-imagens { 
+    width: 100%;
+    margin: 15px 0;
+}
+.area-tres-imagens {
+    display: flex;
+}
+/* Aqui definimos o tamanho das 3 imganes da galeria para que ficquem proprocionalmente no mesmo tamnho e descontando as margens laterais */
+.galeria  img {
+    width: calc((100% /3) - 3px);
+    margin: 0 1.5px;
+}
